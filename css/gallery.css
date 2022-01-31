@@ -1,0 +1,129 @@
+/* Navigation Bar */
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: #f6f6f6;
+}
+.nav-h1 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 0.5rem 1.2rem;
+  /* font-weight: bolder; */
+}
+.nav-h1 > a {
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* color: white; */
+}
+.nav-h1 > a:link {
+  color: dodgerblue;
+}
+.nav-h1 > a:visited {
+  color: dodgerblue;
+}
+
+.nav-btn {
+  margin: 1.2rem 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: 0;
+}
+.nav-btn:hover {
+  background: #dbd0c0;
+  font-weight: 550;
+}
+
+.nav-btn > a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-btn > a:link {
+  color: dodgerblue;
+}
+
+.nav-btn > a:visited {
+  color: dodgerblue;
+}
+.nav-btn > a:hover {
+  color: orangered;
+}
+
+@media screen and (min-width: 200px) and (max-width: 414px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-h1 {
+    position: relative;
+    left: 2.5rem;
+  }
+  .nav-btn {
+    display: block;
+    position: relative;
+    left: 5rem;
+  }
+}
+
+/* Navigation Bar */
+
+/* Gallery */
+.gallery {
+  /* background: yellowgreen; */
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50%;
+  grid-template-areas:
+    "box-one box-two box-two"
+    "box-four box-two box-two";
+  gap: 1rem;
+  height: 100vh;
+}
+.box-one {
+  background: lightcoral;
+  grid-area: box-one;
+}
+.box-one > img {
+  height: 370px;
+  width: 100%;
+}
+.box-two {
+  /* background: lightgreen; */
+  grid-area: box-two;
+}
+.box-three {
+  /* background: lightgrey; */
+  grid-area: box-two;
+}
+.box-four {
+  /* background: lightseagreen; */
+  grid-area: box-four;
+}
+.box-four > img {
+  height: 322px;
+  width: 100%;
+}
+.box-five {
+  /* background: lightcyan; */
+  grid-area: box-two;
+}
+.box-six {
+  /* background: lightpink; */
+  grid-area: box-two;
+}
+.box-six > img {
+  height: 700px;
+  width: 100%;
+}
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .gallery {
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-template-areas: "box-one" "box-two" "box-four";
+  }
+}
+/* Gallery */

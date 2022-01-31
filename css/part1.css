@@ -1,0 +1,13 @@
+.part-one {
+  background: url(/images/8.part1/part-one-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  /* margin: 10px; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.part-one-p-one {
+  font-size: 2rem;
+}

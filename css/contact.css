@@ -1,0 +1,125 @@
+/* Navigation Bar */
+/* Navigation Bar */
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: #f6f6f6;
+}
+.nav-h1 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 0.5rem 1.2rem;
+  /* font-weight: bolder; */
+}
+.nav-h1 > a {
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* color: white; */
+}
+.nav-h1 > a:link {
+  color: dodgerblue;
+}
+.nav-h1 > a:visited {
+  color: dodgerblue;
+}
+.nav-btn {
+  margin: 1.2rem 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: 0;
+}
+.nav-btn:hover {
+  background: #dbd0c0;
+  font-weight: 550;
+}
+
+.nav-btn > a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-btn > a:link {
+  color: dodgerblue;
+}
+
+.nav-btn > a:visited {
+  color: dodgerblue;
+}
+
+.nav-btn > a:hover {
+  color: orangered;
+}
+@media screen and (min-width: 200px) and (max-width: 414px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-h1 {
+    position: relative;
+    left: 2.5rem;
+  }
+  .nav-btn {
+    display: block;
+    position: relative;
+    left: 5rem;
+  }
+}
+/* Navigation Bar */
+/* Contact */
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+  display: block;
+  font-weight: bold;
+  padding: 10px 2px;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 1px solid grey;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  outline: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
+}
+
+.textarea > p {
+  font-weight: bold;
+}
+textarea {
+  border: 1px solid grey;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  outline: 0;
+}
+textarea:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
+}
+
+.btn-one,
+.btn-two {
+  margin: 1.2rem 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: 0;
+  color: dodgerblue;
+  font-size: 1rem;
+}
+.btn-one:hover,
+.btn-two:hover {
+  background: #dbd0c0;
+  font-weight: 550;
+  color: orangered;
+}
+/* Contact */

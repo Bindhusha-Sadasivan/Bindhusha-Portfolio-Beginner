@@ -1,0 +1,153 @@
+/* Navigation Bar */
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: #f6f6f6;
+}
+.nav-h1 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 0.5rem 1.2rem;
+  /* font-weight: bolder; */
+}
+.nav-h1 > a {
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* color: white; */
+}
+.nav-h1 > a:link {
+  color: dodgerblue;
+}
+.nav-h1 > a:visited {
+  color: dodgerblue;
+}
+
+.nav-btn {
+  margin: 1.2rem 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: 0;
+}
+.nav-btn:hover {
+  background: #dbd0c0;
+  font-weight: 550;
+}
+
+.nav-btn > a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-btn > a:link {
+  color: dodgerblue;
+}
+
+.nav-btn > a:visited {
+  color: dodgerblue;
+}
+
+.nav-btn > a:hover {
+  color: orangered;
+}
+
+@media screen and (min-width: 200px) and (max-width: 414px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-h1 {
+    position: relative;
+    left: 2.5rem;
+  }
+  .nav-btn {
+    display: block;
+    position: relative;
+    left: 5rem;
+  }
+}
+
+/* Navigation Bar */
+
+/* Float Layout */
+.float {
+  background: #f6f6f6;
+  /* border: 2px solid gold; */
+}
+
+.float-title > h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem 30rem;
+  font-size: 2.5rem;
+  position: relative;
+  top: 1rem;
+  color: dodgerblue;
+}
+
+/* .float-one {
+  border: 2px solid gold;
+} */
+
+.float-one > .float-img-one {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  float: left;
+  margin: 2rem 32rem 2rem 2rem;
+}
+
+.float-one:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.float-one > .float-one-p-one {
+  font-family: cursive;
+  font-size: 2.5rem;
+  margin: 2rem;
+  padding-top: 5rem;
+  /* color: dodgerblue; */
+}
+
+.float-one > .float-one-p-two {
+  font-family: cursive;
+  font-size: 2rem;
+  color: orangered;
+}
+
+/* .float-two {
+  border: 2px solid gold;
+} */
+
+.float-two > .float-img-two {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  float: right;
+  margin: 2rem;
+}
+
+.float-two:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.float-two > .float-two-p-one {
+  font-family: cursive;
+  font-size: 3rem;
+  margin: 3rem;
+  padding-top: 7rem;
+}
+
+.float-two > .float-two-p-two {
+  font-family: cursive;
+  font-size: 2rem;
+  margin: 3rem;
+  color: orangered;
+}
+
+/* Float Layout */

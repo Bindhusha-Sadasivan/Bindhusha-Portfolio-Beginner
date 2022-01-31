@@ -1,0 +1,165 @@
+/* Navigation Bar */
+
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: #f6f6f6;
+}
+.nav-h1 {
+  display: inline-block;
+  font-size: 3rem;
+  margin: 0.5rem 1.2rem;
+  /* font-weight: bolder; */
+}
+.nav-h1 > a {
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  /* color: white; */
+}
+.nav-h1 > a:link {
+  color: dodgerblue;
+}
+.nav-h1 > a:visited {
+  color: dodgerblue;
+}
+.nav-btn {
+  margin: 1.2rem 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: 0;
+}
+.nav-btn:hover {
+  background: #dbd0c0;
+  font-weight: 550;
+}
+
+.nav-btn > a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-btn > a:link {
+  color: dodgerblue;
+}
+
+.nav-btn > a:visited {
+  color: dodgerblue;
+}
+
+.nav-btn > a:hover {
+  color: orangered;
+}
+
+@media screen and (min-width: 200px) and (max-width: 414px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-h1 {
+    position: relative;
+    left: 2.5rem;
+  }
+  .nav-btn {
+    display: block;
+    position: relative;
+    left: 5rem;
+  }
+}
+
+/* Navigation Bar */
+/* Grid Layout */
+.grid-h {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grid-h > h1 {
+  margin-bottom: 0;
+}
+.card {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "card-one card-two card-three";
+  justify-items: center;
+  align-items: center;
+  font-family: cursive;
+}
+.card-one {
+  background: lightgreen;
+  grid-area: card-one;
+}
+.card-one-img {
+  width: 400px;
+  height: 400px;
+}
+
+.card-one-info {
+  text-align: center;
+}
+
+.card-one-info > a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-two {
+  background: lightpink;
+  grid-area: card-two;
+}
+.card-two-img {
+  width: 400px;
+  height: 400px;
+}
+
+.card-two-info {
+  text-align: center;
+}
+
+.card-two-info > a {
+  text-decoration: none;
+  color: black;
+}
+.card-three {
+  background: lightskyblue;
+  grid-area: card-three;
+}
+.card-three-img {
+  width: 400px;
+  height: 400px;
+}
+
+.card-three-info {
+  text-align: center;
+}
+
+.card-three-info > a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "card-one"
+      "card-two"
+      "card-three";
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "card-one card-two"
+      "card-three .";
+    gap: 1rem;
+  }
+}
+/* Grid Layout */

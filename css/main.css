@@ -1,0 +1,199 @@
+.land-page {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  background: #f6f6f6;
+  gap: 10px;
+}
+.sidebar > button {
+  display: block;
+  margin: 1.2rem 1.2rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.8rem;
+  outline: 0;
+  border: 0;
+}
+.sidebar > button:hover {
+  background: #dbd0c0;
+  font-weight: 550;
+}
+.sidebar-a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+.sidebar-a:link {
+  color: dodgerblue;
+}
+.sidebar-a:visited {
+  color: dodgerblue;
+}
+.main-page {
+  /* background: url(/images/1.main-page-image/main-page1.jpg); */
+  /* background: url(/images/1.main-page-image/smiling-face-main-img.jpg); */
+  /* background: black; */
+  /* background: url(/images/1.main-page-image/smiling-img.jpg); */
+  background: url(/images/1.main-page-image/svg.svg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+/* .main-page-p-one {
+  color: white;
+  font-weight: bolder;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+} */
+.main-page-p-two {
+  color: orangered;
+  font-weight: bolder;
+  font-size: 2rem;
+  position: relative;
+  top: 3rem;
+  /* left: 6rem; */
+  margin-left: 1rem;
+  /* margin-left: 0; */
+}
+.main-page-p-three {
+  color: dodgerblue;
+  font-weight: bolder;
+  font-size: 3rem;
+  position: relative;
+  /* left: 15rem; */
+  font-style: italic;
+  top: 2rem;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+.main-page-p-four {
+  color: orangered;
+  /* font-weight: bolder; */
+  /* font-size: 3rem; */
+  /* position: relative; */
+  /* left: 15rem; */
+  /* font-style: italic; */
+  /* top: 0rem; */
+  margin-left: 1rem;
+  margin-top: 0;
+}
+.main-page-p-five {
+  color: dodgerblue;
+  font-weight: bolder;
+  font-size: 3rem;
+  position: relative;
+  top: 9rem;
+  left: 45rem;
+  margin-bottom: 0;
+  margin-top: 10rem;
+}
+.main-page-p-six {
+  color: orangered;
+  font-weight: bolder;
+  font-size: 2rem;
+  position: relative;
+  top: 3rem;
+  left: 51rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 760px) {
+  .land-page {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-page-p-five {
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 3rem;
+    position: relative;
+    top: -3rem;
+    left: 1rem;
+    margin-bottom: 0;
+    margin-top: 10rem;
+  }
+  .main-page-p-six {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 2rem;
+    position: relative;
+    top: -13rem;
+    left: 1rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .land-page {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    background: #f6f6f6;
+    gap: 10px;
+  }
+  .main-page-p-five {
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 3rem;
+    position: relative;
+    top: -3rem;
+    left: 1rem;
+    margin-bottom: 0;
+    margin-top: 10rem;
+  }
+  .main-page-p-six {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 2rem;
+    position: relative;
+    top: -9rem;
+    left: 1rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+  .land-page {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    background: #f6f6f6;
+    gap: 10px;
+  }
+  /* .main-page-p-five {
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 3rem;
+    position: relative;
+    top: 7rem;
+    left: 35rem;
+    margin-bottom: 0;
+    margin-top: 10rem;
+  }
+  .main-page-p-six {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+    left: 40rem;
+    margin-top: 0;
+  } */
+  .main-page-p-five {
+    color: dodgerblue;
+    font-weight: bolder;
+    font-size: 3rem;
+    position: relative;
+    top: 7rem;
+    left: 44rem;
+    margin-bottom: 0;
+    margin-top: 10rem;
+  }
+  .main-page-p-six {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 2rem;
+    position: relative;
+    top: 1rem;
+    left: 50rem;
+    margin-top: 0;
+  }
+}
